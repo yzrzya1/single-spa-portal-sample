@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title></title>
+	</head>
+	<body>
+
+		<script src="./system.js"></script>
+
+		<script>
+            window.sofeManifest = {
+                sofe: {
+                    manifest: {
+                        "fetchWithCache": "commonDeps/fetchWithCache.js",
+                    }
+                }
+            };
+		</script>
+
+		<!-- Load the common deps-->
+		<script src="./depsRegester.js"></script>
+
+		<!-- Load the application -->
+		<script src="./core.js"></script>
+
+		<!-- Static navbar -->
+		<link rel="stylesheet" href="./style.css">
+		<div class="apps-container">
+			<div class="adapter"></div>
+			<div id="device" class="app-container"></div>
+			<div id="app1" class="app-container"></div>
+			<div id="app2" class="app-container"></div>
+			<div id="app3" class="app-container"></div>
+			<div id="app4" class="app-container"></div>
+			<div id="app5" class="app-container"></div>
+		</div>
+		<div id="navbar">
+			<navbar></navbar>
+		</div>
+	</body>
+</html>
