@@ -1,0 +1,37 @@
+{
+  "name": "single-spa-portal-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm run install:config && npm run install:appCore && npm run install:app1React && npm run install:app2Angular && npm run install:app3Angular1 && npm run install:app4vue && npm run install:app5Angular && npm run install:appCommonDeps && npm run install:appDevice  && npm run install:appNavbar",
+    "install:config": "npm i",
+    "install:appCore": "cd ./appCore/ && npm i",
+    "install:app1React": "cd ./app1React/ && npm i",
+    "install:app2Angular": "cd ./app2Angular/ && npm i",
+    "install:app3Angular1": "cd ./app3Angular1/ && npm i",
+    "install:app4vue": "cd ./app4vue/ && npm i",
+    "install:app5Angular": "cd ./app5Angular/ && npm i",
+    "install:appAdapter": "cd ./appAdapter/ && npm i",
+    "install:appCommonDeps": "cd ./appCommonDeps/ && npm i",
+    "install:appDevice": "cd ./appDevice/ && npm i",
+    "install:appNavbar": "cd ./appNavbar/ && npm i",
+    "start": "concurrently --kill-others --kill-others-on-fail -p name --names \" run appCore & app1React & app2Angular & app3Angular1 & app4vue & app5Angular & appAdapter & appCommonDeps & appDevice & appNavbar\" \"npm run start:appCore\" \"npm run start:app1React\" \"npm run start:app2Angular\" \"npm run start:app3Angular1\" \"npm run start:app4vue\" \"npm run start:app5Angular\" \"npm run start:appAdapter\" \"npm run start:appCommonDeps\" \"npm run start:appDevice\" \"npm run start:appNavbar\" ",
+    "start:appCore": "cd ./appCore/ && npm run watch",
+    "start:app1React": "cd ./app1React/ && npm run serve:portal",
+    "start:app2Angular": "cd ./app2Angular/ && npm run serve:portal",
+    "start:app3Angular1": "cd ./app3Angular1/ && npm run serve:portal",
+    "start:app4vue": "cd ./app4vue/ && npm run serve:portal",
+    "start:app5Angular": "cd ./app5Angular/ && npm run serve:portal",
+    "start:appAdapter": "cd ./appAdapter/ && npm run serve:portal",
+    "start:appCommonDeps": "cd ./appCommonDeps/ && npm run serve:portal",
+    "start:appDevice": "cd ./appDevice/ && npm run serve:portal",
+    "start:appNavbar": "cd ./appNavbar/ && npm run serve:portal"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "4.0.1"
+  }
+}
