@@ -92,3 +92,14 @@ In the future we may have better solutions like Angular elements to deal with th
 ## Forks
 - https://github.com/tsukhu/single-spa-portal-monorepo (If you plan to use a monorepo with multiple apps maintained by the same team, you may be interested in this fork which integrates yarn workspaces + lerna to simplify the development process. For more details see: [here](https://github.com/me-12/single-spa-portal-example/issues/45))
 
+## Other Approach
+meituan (https://tech.meituan.com/2018/09/06/fe-tiny-spa.html)   - article 
+
+micro-front-end-cn (https://microfrontends.cn/)  - article 
+
+angular-based (https://github.com/phodal/mooa)  - dev version none release
+(https://github.com/phodal/mooa-boilerplate) - corresponding cli
+
+react-based (https://github.com/umijs/umi) -  alibaba team release
+
+react-loadable (https://github.com/jamiebuilds/react-loadable)  - first version at Mar 9, 2017
