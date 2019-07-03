@@ -12,7 +12,7 @@ This example is based on [simple-single-spa](https://github.com/CanopyTax/single
 ## How to run this project
 
 1. Clone this project
-2. Jump into each app folder 
+2. Apps Folder Structure and Port
     
     - app1React - (port 9001)
     - app2Angular - (port 9002)
@@ -24,16 +24,33 @@ This example is based on [simple-single-spa](https://github.com/CanopyTax/single
     - appDevice - (port 9020)
     - appNavbar - (port 9010)
     
-    and do:
-   - `npm install`
-   - `npm run watch:portal`
-3. Then start the portal [appCore] with:
-   - `npm install`
-   - `npm run watch`
+  
+3. Then Quick Start with:
+   - `npm run install-all`
+   - `npm start`
 4. Open up http://localhost:9000 in a web browser.
+
+5. You will get Adapter at the beginning.
+![adapter](docs/adapter.png "adapter")
+
+- dropdown app (for select the app you wana to load), info already filled, or you can edit by your wish.
+- app name (name the app)
+- app routeHash (optional)
+- app Url (sub-app entry file url)
+- store Url (sub-app store)
+
+
+![load-gif](docs/load-gif.gif "load-gif")
+
+![counter-sync-gif](docs/counter-communication.gif "counter-sync-gif")
+
+## Total View
+![total-view](docs/total-view.jpg "total-view")
 
 ## npm tasks
 
+ #### in each sub-app
+ 
 `watch:portal`: Builds the app as UMD module with singleSPA as middleware to consume the app by the portal. Changes are automatically detected.
 
 `build:portal`: Releases the app as UMD module and outputs all contents to a folder. You can upload the produced file in production to your webserver. **Hint**: The Angular 6 example is being build with AOT. You can use `npm run build:portal -- --env.analyzeBundle` to see that there is no compiler.js inside the bundle.

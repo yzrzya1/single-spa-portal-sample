@@ -61,4 +61,11 @@ app.use('/device', proxy({
         '^/device': '/',
     }}));
 
+app.use('/adapter', proxy({
+    target: 'http://localhost:9021',
+    changeOrigin: true,
+    pathRewrite: {
+        '^/adapter': '/',
+    }}));
+
 app.listen(9000);

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "watch:portal": "webpack-dev-server --port 9001",
+    "watch:portal": "webpack-dev-server --port 9021",
     "build:portal": "webpack -p --progress --env.prod"
   },
   "keywords": [],

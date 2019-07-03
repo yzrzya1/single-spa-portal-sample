@@ -5,7 +5,7 @@ import './root.component.js';
 
 angular
     .module('app')
-    .config(['$stateProvider', '$locationProvider', ($stateProvider, $locationProvider) => {
+    .config(['$stateProvider', '$locationProvider', '$urlRouterProvider', ($stateProvider, $locationProvider, $urlRouterProvider) => {
 
         // make sure angular does not rewrite our urls, since they are set by the portal
         $locationProvider.hashPrefix('');
@@ -13,6 +13,7 @@ angular
             enabled: false,
             requireBase: false,
         });
+        $urlRouterProvider.otherwise('/app3');
 
 
         $stateProvider
