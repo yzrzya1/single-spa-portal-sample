@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm run install:config && npm run install:appCore && npm run install:app1React && npm run install:app2Angular && npm run install:app3Angular1 && npm run install:app4vue && npm run install:app5Angular && npm run install:appCommonDeps && npm run install:appDevice  && npm run install:appNavbar",
+    "install-all": "npm run install:config && npm run install:appCore && npm run install:appAdapter && npm run install:app1React && npm run install:app2Angular && npm run install:app3Angular1 && npm run install:app4vue && npm run install:app5Angular && npm run install:appCommonDeps && npm run install:appDevice  && npm run install:appNavbar",
     "install:config": "npm i",
     "install:appCore": "cd ./appCore/ && npm i",
     "install:app1React": "cd ./app1React/ && npm i",
