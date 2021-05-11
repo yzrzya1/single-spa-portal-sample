@@ -44,7 +44,7 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "rxjs": "6.2.2",
     "sofe": "2.1.4",
     "ts-loader": "^4.4.2",
