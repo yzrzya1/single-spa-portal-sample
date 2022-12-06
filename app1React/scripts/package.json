@@ -18,7 +18,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "file-loader": "^1.1.11",
-    "http-server": "^0.11.1",
+    "http-server": "^0.11.2",
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
     "uglifyjs-webpack-plugin": "^1.2.7",
