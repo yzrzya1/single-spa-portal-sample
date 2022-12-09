@@ -27,7 +27,7 @@
     "clean-webpack-plugin": "0.1.19",
     "copy-webpack-plugin": "4.5.2",
     "css-loader": "1.0.0",
-    "http-server": "^0.11.1",
+    "http-server": "^0.11.2",
     "kremling-loader": "0.1.1",
     "postcss-loader": "3.0.0",
     "style-loader": "0.23.0",
