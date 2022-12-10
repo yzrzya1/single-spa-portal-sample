@@ -18,7 +18,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "http-proxy": "^1.17.0",
     "http-proxy-middleware": "^0.19.1",
     "webpack": "^4.16.3",
